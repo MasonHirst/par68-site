@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'par68-static-site';
+  title = 'Par 68 Golf';
+
+  copyText(text: string) {
+    navigator.clipboard.writeText(text);
+    alert('Copied to clipboard!');
+  }
 }
